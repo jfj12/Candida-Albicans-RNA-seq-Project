@@ -1,4 +1,4 @@
-Trimmomatic
+### Trimmomatic
 
 #!/bin/bash
 #SBATCH --job-name=example.SBATCH --output=Scenario3
