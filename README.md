@@ -1,3 +1,2 @@
-# Example1
+# Aedes Aegypti RNA seq Project
 First example repository
-Aedes Aegypti RNA seq Project
