@@ -1,8 +1,4 @@
 # RNA seq Project
-## Overview of RNA-seq Project
-
-description here
-
 ## Overview of Timeline and Methods
 ### 10/29/2024 - Preliminary Sequence Analysis
 RNA from biologically-replicated _Candida albicans_ cultures grown in the presence of thiamine were extracted. A sequence library was prepared and ribosomal RNAs were removed 
