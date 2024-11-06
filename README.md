@@ -1,2 +1,8 @@
-# Aedes Aegypti RNA seq Project
-First example repository
+# RNA seq Project
+Overview of RNA-seq Project
+
+description here
+
+Overview of Timeline and Methods
+
+Description here
