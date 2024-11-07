@@ -1,7 +1,7 @@
 # RNA seq Project
 ## Project Primary Goal
 To investigate differential gene expression and function of _Candida albicans_ in the presence and absence of thiamine. In other words, what pathways in _C albicans_ are 
-affected or regulated by the presence or absence of thiamine? 
+affected or regulated by the presence or absence of thiamine? RNA sequencing (RNA-seq) data will be used to determine gene transcription under thiamine-rich and poor environments. 
 ## Overview of Timeline and Methods
 ### 10/29/2024 - Preliminary Sequence Analysis
 RNA from biologically-replicated _Candida albicans_ cultures grown in the presence of thiamine were extracted. A sequence library was prepared and ribosomal RNAs were removed 
