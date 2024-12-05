@@ -1,4 +1,4 @@
-__Sequences are available through NCBI__
+__Sequences available through NCBI__
 
 GCF_000182965.3_ASM18296v3_genomic.fna
 
