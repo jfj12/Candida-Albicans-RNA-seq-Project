@@ -4,4 +4,5 @@ _Candida albicans_ (_C. albicans_) is an opportunistic fungal species present in
 
 #### Refrences
 1 Talapko, Jasminka et al. “Candida albicans-The Virulence Factors and Clinical Manifestations of Infection.” Journal of fungi (Basel, Switzerland) vol. 7,2 79. 22 Jan. 2021, doi:10.3390/jof7020079
+
 2 Marchlewicz, Mariola et al. "The Role of Vitamin D3 Deficiency and Colonization of the Oral Mucosa by Candida Yeast-like Fungi in the Pathomechanism of Psoriasis." Journal of Clinical Medicine, col. 13, 22 6874. 15 Nov. 2024 https://doi.org/10.3390/jcm13226874
