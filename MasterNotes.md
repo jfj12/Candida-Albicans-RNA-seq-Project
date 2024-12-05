@@ -11,14 +11,16 @@ before being sequenced. Sequencing produced the corresponding read pairs WTC1_.f
 sequences had poor per-base sequence quality, per-base sequence content, and poor sequence duplication levels. 
 #### Read Cleaning
 Trimmomatic was run with headcrop, trailing, slidingwindow:4:15, and minlen:75 parameters to clean the identified sequence errors. Post-cleaning resulted in 0.959% sequence
-retention with improved per-base sequence quality and per-base sequence content while the sequence duplication remained poor quality. [spreadsheet link](https://docs.google.com/spreadsheets/d/1AOa-XaTzR_PKMIRQDmu8oDTmawXXnkIwEjKOQkNC7Vs/edit?gid=0#gid=0)
+retention with improved per-base sequence quality and per-base sequence content while the sequence duplication remained poor quality. [Read clean spreadsheet link](https://docs.google.com/spreadsheets/d/1AOa-XaTzR_PKMIRQDmu8oDTmawXXnkIwEjKOQkNC7Vs/edit?gid=0#gid=0)
 | File Name | # Preclean Reads | # Postclean Reads | Retention % | Postclean per-base sequence quality | Preclean per-base sequence content | Postclean per-base sequence content | Preclean sequence duplication | Postclean sequence duplication | Postclean adapter contamination |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | WTC1_1.fq.gz | 20752795 | 19901616 | 0.95898485 | G | B | G | B | B | None |
 | WTC1_2.fq.gz | 20752795 | 19901616 | 0.95898485 | G | B | G | B | B | None |
 #### Cleaned Sequence Alignment
-Using Bowtie2/2.5.3, the cleaned sequences were set into four indexes and mapped to the _C albicans_ reference genome (GCF_000182965.3_ASM18296v3_genomic.fna available 
-through NCBI).
+Using Bowtie2/2.5.3, the cleaned sequences were set into four indexes and mapped to the _C albicans_ reference genome using the Bowtie2.SBATCH script in scripts. (GCF_000182965.3_ASM18296v3_genomic.fna available through NCBI).[Alignment summary spreadsheet](https://docs.google.com/spreadsheets/d/1fa-FXVMlCXOZkbHSx_mMg0OXLMy9BeBJg8uWrEMpKGo/edit?gid=0#gid=0)
+| Alignment File | # Cleaned reads after trimmomatic | # Read pairs detected by bowtie2 | % Aligned concordantly exactly 1 time | % Aligned concordantly >1 time | Overall alignment rate |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| WTC1.sam | 19901616 | 19901616 | 89.07% | 6.06% | 98.29% |
 #### Sequence Gene Counts
 description of Htseq-count
 #### Differential Expression Analysis
@@ -28,7 +30,7 @@ description
 ####
 ## Results
 __Table 1__: table caption
-| Locus Tag | NCBI Gene ID | gtf Gene Name | Biological Process (Uniprot) | Molecular Function (Uniprot) | Cellular Component (Uniprot) |
+| Locus tag | NCBI gene ID | gtf Gene name | Biological process (Uniprot) | Molecular function (Uniprot) | Cellular component (Uniprot) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 |CAALFM_C102590CA | 3636803 | SNZ1 | amino acid metabolism, pyridoxine biosynthesis, pyridoxal phosphate biosynthesis | amine lyase; pyridoxal 5'-phosphate synthase (glutamine hydrolyzing) | cytoplasm, fungal biofilm matrix|
 | CAALFM_C102600WA | 3636812 | SNO1 | glutamine metabolism, pyridoxal phosphate biosynthesis, pyridoxine metabolism | glutaminase | cytoplasm, cytosol, glutaminase complex |
