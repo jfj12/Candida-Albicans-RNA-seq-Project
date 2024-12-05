@@ -1,27 +1,3 @@
 # _Candida albicans_ RNA-seq Project
 ## Abstract
-sentence about the significance of c albicans
-
-_Candida albicans_ (_C. albicans_)
-
-sentence about thiamine's importance in c albicans and the knowledge gap
-
-type here
-
-The primary goal of this project is to investigate differential gene expression and function of _Candida albicans_ in the presence and absence of thiamine. In other words, what pathways in _C. albicans_ are affected or regulated by the presence or absence of thiamine? RNA sequencing (RNA-seq) data will be used to determine gene transcription under thiamine-rich and poor environments. 
-
-sentence about methods
-
-type here
-
-sentence about results
-
-type here
-
-biological significance
-
-type here
-
-further applications
-
-type here
+_Candida albicans_ (_C. albicans_) is an opportunistic fungal species present in the human microbiome that can lead to potentially life-threatening organ pathogenesis. While virulence, characterized by hyphae formation, has been shown to increase with vitamin deficiency the cellular mechanisms contributing to virulence, namely hyphae formation, are largely uncertain [1,2]. This project aims to discover the link between the genetic contributions related to hyphal formation and vitamin metabolism. Biological replicates of _C. albicans_ were grown in the presence and absence of thiamine, a precursor to vitamin B1. RNA was extracted, purified, and enriched for mRNA. Polyadenylated mRNA sequences were fragmented with adapter ligation and amplification to construct cDNA libraries for sequencing. From next-generation sequencing, the library of single-end and paired-end sequences was quality-controlled before being mapped to the reference genome. Differential expression and gene ontology analysis in the absence of thiamine yielded 13 significantly overexpressed genes relating to amino acid and vitamin metabolism and transport. Sequence and bioinformatic results suggest thiamine metabolism plays a role in virulence through hyphae formation.
