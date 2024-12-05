@@ -1,6 +1,7 @@
 # _Candida albicans_ RNA-seq Project
 ## Abstract
 sentence about the significance of c albicans
+
 _Candida albicans_ (_C. albicans_)
 
 sentence about thiamine's importance in c albicans and the knowledge gap
