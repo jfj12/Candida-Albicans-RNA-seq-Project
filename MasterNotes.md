@@ -40,9 +40,10 @@ __Table 1__: table caption
 | CAALFM_CR09350CA | 3641901 | N/A | thiamine metabolism | Thiaminase-2/PQQC domain-containing protein | cytosol |
 | CAALFM_CR09360WA | 3641902 | FCY24 | transmembrane transport | transmembrane transporter | plasma membrane |
 
-![TH-vTH+_pcaplot](https://github.com/user-attachments/assets/1cdf01e8-a236-4ee5-942d-088a5b69f08e)
+![TH-vTH+_pcaplot](https://github.com/user-attachments/assets/8abe3bd9-8698-4a2f-8ad4-48469039c4da)
 __Figure 1__: table caption
 
+![volcano_TH-vTH+](https://github.com/user-attachments/assets/bc94a540-d163-40fa-af34-ad16640d8a16)
 __Figure 2__: table caption
 ## Analysis and Discussion
 type analysis and biological interpretation here
