@@ -39,6 +39,7 @@ __Table 1__: table caption
 | CAALFM_CR09290WA | 3641921 | THI13 | thiamine biosynthesis, thiamine diphosphate biosynthesis | transferase; metal ion binding, 4-amino-5-hydroxymethyl-2-methyl pyrimidine phosphate synthase | N/A |
 | CAALFM_CR09350CA | 3641901 | N/A | thiamine metabolism | Thiaminase-2/PQQC domain-containing protein | cytosol |
 | CAALFM_CR09360WA | 3641902 | FCY24 | transmembrane transport | transmembrane transporter | plasma membrane |
+
 ![TH-vTH+_pcaplot](https://github.com/user-attachments/assets/1cdf01e8-a236-4ee5-942d-088a5b69f08e)
 __Figure 1__: table caption
 
