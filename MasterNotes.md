@@ -11,12 +11,11 @@ before being sequenced. Sequencing produced the corresponding read pairs WTC1_.f
 sequences had poor per-base sequence quality, per-base sequence content, and poor sequence duplication levels. 
 #### Read Cleaning
 Trimmomatic was run with headcrop, trailing, slidingwindow:4:15, and minlen:75 parameters to clean the identified sequence errors. Post-cleaning resulted in 0.959% sequence
-retention with improved per-base sequence quality and per-base sequence content while the sequence duplication remained poor quality.
+retention with improved per-base sequence quality and per-base sequence content while the sequence duplication remained poor quality. (Spreadsheet link)[https://docs.google.com/spreadsheets/d/1AOa-XaTzR_PKMIRQDmu8oDTmawXXnkIwEjKOQkNC7Vs/edit?gid=0#gid=0]
 | File Name | # Preclean Reads | # Postclean Reads | Retention % | Postclean per-base sequence quality | Preclean per-base sequence content | Postclean per-base sequence content | Preclean sequence duplication | Postclean sequence duplication | Postclean adapter contamination |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | WTC1_1.fq.gz | 20752795 | 19901616 | 0.95898485 | G | B | G | B | B | None |
 | WTC1_2.fq.gz | 20752795 | 19901616 | 0.95898485 | G | B | G | B | B | None |
-(Spreadsheet link)[https://docs.google.com/spreadsheets/d/1AOa-XaTzR_PKMIRQDmu8oDTmawXXnkIwEjKOQkNC7Vs/edit?gid=0#gid=0]
 #### Cleaned Sequence Alignment
 Using Bowtie2/2.5.3, the cleaned sequences were set into four indexes and mapped to the _C albicans_ reference genome (GCF_000182965.3_ASM18296v3_genomic.fna available 
 through NCBI).
