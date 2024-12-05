@@ -24,8 +24,7 @@ description
 ####
 ## Results
 __Table 1__: table caption
-| Locus Tag | NCBI Gene ID | gtf_gene name | Biological Process (Uniprot) | Molecular Function - Protein (Uniprot) | Cellular Component - Subcellular Location (Uniprot)|
-| CAALFM_C102590CA | 3636803 | SNZ1 | amino acid metabolism, pyridoxine biosynthesis, pyridoxal phosphate biosynthesis | amine lyase; pyridoxal 5'-phosphate synthase (glutamine hydrolyzing) | cytoplasm, fungal biofilm matrix|
+| Locus Tag | NCBI Gene ID | gtf Gene Name | Biological Process (Uniprot) | Molecular Function (Uniprot) | Cellular Component (Uniprot) 
 | ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
 | ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
 | ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
@@ -36,7 +35,6 @@ __Table 1__: table caption
 | ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
 | ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
 | ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
+|CAALFM_C102590CA | 3636803 | SNZ1 | amino acid metabolism, pyridoxine biosynthesis, pyridoxal phosphate biosynthesis | amine lyase; pyridoxal 5'-phosphate synthase (glutamine hydrolyzing) | cytoplasm, fungal biofilm matrix|
 ## Analysis and Discussion
 type analysis and biological interpretation here
