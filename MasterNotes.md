@@ -1,12 +1,12 @@
 # Master Notes
 ## Goals
-type goals here
+The primary goal of this project is to uncover the gene expression profile of thiamine metabolism in _Candida albicans_ (_C. albicans_) virulence through hyphae formation using RNA sequencing under thiamine starvation conditions.
 ## Experimental Design and Workflow
 ### Experimental Design
 summary of experimental design
 ### Workflow
 #### Preliminary Sequence Analysis
-RNA from biologically-replicated _Candida albicans_ cultures grown in the presence of thiamine were extracted. A sequence library was prepared and ribosomal RNAs were removed 
+RNA from biologically-replicated _C. albicans_ cultures grown in the presence of thiamine were extracted. A sequence library was prepared and ribosomal RNAs were removed 
 before being sequenced. Sequencing produced the corresponding read pairs WTC1_.fq.gz and WTC1_2.fq.gz. Fastqc was conducted on the sequence reads and it was determined the 
 sequences had poor per-base sequence quality, per-base sequence content, and poor sequence duplication levels. 
 #### Read Cleaning
