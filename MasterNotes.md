@@ -29,7 +29,7 @@ description of deseq2
 description
 ####
 ## Results
-(__Table 1__)[https://docs.google.com/spreadsheets/d/1Tri4uQrTrm4q5R-wuuJnm1LEDS5FAGOOAoEysvvmlHY/edit?gid=1290215029#gid=1290215029]: table caption
+[__Table 1__](https://docs.google.com/spreadsheets/d/1Tri4uQrTrm4q5R-wuuJnm1LEDS5FAGOOAoEysvvmlHY/edit?gid=1290215029#gid=1290215029): table caption
 | Locus tag | NCBI gene ID | gtf Gene name | Biological process (Uniprot) | Molecular function (Uniprot) | Cellular component (Uniprot) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 |CAALFM_C102590CA | 3636803 | SNZ1 | amino acid metabolism, pyridoxine biosynthesis, pyridoxal phosphate biosynthesis | amine lyase; pyridoxal 5'-phosphate synthase (glutamine hydrolyzing) | cytoplasm, fungal biofilm matrix|
