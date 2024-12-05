@@ -12,6 +12,10 @@ sequences had poor per-base sequence quality, per-base sequence content, and poo
 #### Read Cleaning
 Trimmomatic was run with headcrop, trailing, slidingwindow:4:15, and minlen:75 parameters to clean the identified sequence errors. Post-cleaning resulted in 0.959% sequence
 retention with improved per-base sequence quality and per-base sequence content while the sequence duplication remained poor quality.
+| File Name | # Preclean Reads | # Postclean Reads | Retention % | Postclean per-base sequence quality | Preclean per-base sequence content | Postclean per-base sequence content | Preclean sequence duplication | Postclean sequence duplication | Postclean adapter contamination |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| WTC1_1.fq.gz | 20752795 | 19901616 | 0.95898485 | G | B | G | B | B | None |
+| WTC1_2.fq.gz | 20752795 | 19901616 | 0.95898485 | G | B | G | B | B | None |
 #### Cleaned Sequence Alignment
 Using Bowtie2/2.5.3, the cleaned sequences were set into four indexes and mapped to the _C albicans_ reference genome (GCF_000182965.3_ASM18296v3_genomic.fna available 
 through NCBI).
@@ -40,10 +44,8 @@ __Table 1__: table caption
 | CAALFM_CR09350CA | 3641901 | N/A | thiamine metabolism | Thiaminase-2/PQQC domain-containing protein | cytosol |
 | CAALFM_CR09360WA | 3641902 | FCY24 | transmembrane transport | transmembrane transporter | plasma membrane |
 
-
 ![TH-vTH+_pcaplot](https://github.com/user-attachments/assets/8abe3bd9-8698-4a2f-8ad4-48469039c4da)
 __Figure 1__: table caption
-
 
 ![volcano_TH-vTH+](https://github.com/user-attachments/assets/bc94a540-d163-40fa-af34-ad16640d8a16)
 __Figure 2__: table caption
