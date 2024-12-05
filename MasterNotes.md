@@ -23,6 +23,8 @@ description of deseq2
 description
 ####
 ## Results
-Present results here
+__Table 1__: table caption
+| First Header  | Second Header |
+| ------------- | ------------- |
 ## Analysis and Discussion
 type analysis and biological interpretation here
