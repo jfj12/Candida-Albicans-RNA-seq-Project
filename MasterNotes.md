@@ -24,17 +24,20 @@ description
 ####
 ## Results
 __Table 1__: table caption
-| Locus Tag | NCBI Gene ID | gtf Gene Name | Biological Process (Uniprot) | Molecular Function (Uniprot) | Cellular Component (Uniprot) 
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
-| ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
+| Locus Tag | NCBI Gene ID | gtf Gene Name | Biological Process (Uniprot) | Molecular Function (Uniprot) | Cellular Component (Uniprot) |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 |CAALFM_C102590CA | 3636803 | SNZ1 | amino acid metabolism, pyridoxine biosynthesis, pyridoxal phosphate biosynthesis | amine lyase; pyridoxal 5'-phosphate synthase (glutamine hydrolyzing) | cytoplasm, fungal biofilm matrix|
+| CAALFM_C102600WA | 3636812 | SNO1 | glutamine metabolism, pyridoxal phosphate biosynthesis, pyridoxine metabolism | glutaminase | cytoplasm, cytosol, glutaminase complex |
+| CAALFM_C203370WA | 3637387 | THI20 | thiamine biosynthesis, phosphorylation  | transferase, hydroxymethyl pyrimidine kinase, phosphomethylpyrimidine kinase; Trifunctional hydroxymethyl pyrimidine kinase/phosphomethylpyrimidine kinase/thiaminase | cytosol |
+| CAALFM_C204580WA | 3645440 | ERG20 | lipid biosynthesis, steroid biosynthesis; ergosterol biosynthesis, farnesyl diphosphate biosynthesis, geranyl diphosphate biosynthesis, isoprenoid | transferase, dimethylallyltranstransferase, geranyltranstransferase, metal ion binding; farnesyl pyrophosphate synthase | cytoplasm, fungal biofilm matrix |
+| CAALFM_C302860WA | 3638333 | THI6 | thiamine biosynthesis; phosphorylation, thiamine diphosphate biosynthesis | kinase, transferase; ATP binding, hydroxyethyl thiazole kinase, magnesium ion binding, thiamine-phosphate diphosphorylase; bifunctional hydroxyethyl thiazole kinase/thiamine-phosphate diphosphorylase | cytoplasm, cytosol |
+| CAALFM_C302870CA | 3638334 | N/A | amino acid transmembrane transport, cell-abiotic substrate adhesion | amino acid transporter transmembrane domain-containing protein | vacuolar membrane, transmembrane |
+| CAALFM_C305130CA | 3635160 | THI4 | thiamine biosynthesis, thiazole biosynthesis | transferase; iron ion binding, pentosyltransferase; thiamine thiazole synthase | cytosol, fungal biofilm matrix, nucleus |
+| CAALFM_C404220WA | 3646858 | DUO1 | cell cycle, cell division, chromosome partition, mitosis; filamentous growth, miotic spindle organization | DASH complex subunit | cytoplasm, DASH complex, mitotic spindle |
+| CAALFM_C404230WA | 3646857 | N/A | N/A | transmembrane transporter; major facilitator superfamily (MFS) profile domain-containing protein | endoplasmic reticulum, membrane |
+| CAALFM_C503480CA | 3646965 | DUR31 | transport; spermidine transport, cellular response to metal ion, cellular response to starvation, filamentous growth, intracellular pH elevation, transmembrane transport | Spermidine transporter | plasma membrane |
+| CAALFM_CR09290WA | 3641921 | THI13 | thiamine biosynthesis, thiamine diphosphate biosynthesis | transferase; metal ion binding, 4-amino-5-hydroxymethyl-2-methyl pyrimidine phosphate synthase | N/A |
+| CAALFM_CR09350CA | 3641901 | N/A | thiamine metabolism | Thiaminase-2/PQQC domain-containing protein | cytosol |
+| CAALFM_CR09360WA | 3641902 | FCY24 | transmembrane transport | transmembrane transporter | plasma membrane |
 ## Analysis and Discussion
 type analysis and biological interpretation here
