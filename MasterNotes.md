@@ -24,7 +24,7 @@ description
 ####
 ## Results
 __Table 1__: table caption
-| First Header  | Second Header |
+| Locus Tag | NCBI Gene ID | gtf_gene name | Biological Process (Uniprot) | Molecular Function - Protein (Uniprot) | Cellular Component - Subcellular Location (Uniprot)|
 | ------------- | ------------- |
 ## Analysis and Discussion
 type analysis and biological interpretation here
