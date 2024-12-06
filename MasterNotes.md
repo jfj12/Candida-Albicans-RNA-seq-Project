@@ -1,35 +1,30 @@
 # Master Notes
 ## Goals
-The primary goal of this project is to uncover the gene expression profile of thiamine metabolism in _Candida albicans_ (_C. albicans_) virulence through hyphae formation using RNA sequencing under thiamine starvation conditions.
+The primary goal of this project is to uncover the gene expression profile of thiamine metabolism in _Candida albicans_ (_C. albicans_) as it relates to virulence through hyphae formation using RNA sequencing under thiamine starvation conditions.
 ## Experimental Design and Workflow
-### Experimental Design
-summary of experimental design
-### Workflow
-#### Preliminary Sequence Analysis
+### Preliminary Sequence Analysis
 RNA from biologically-replicated _C. albicans_ cultures grown in the presence of thiamine were extracted. A sequence library was prepared and ribosomal RNAs were removed 
-before being sequenced. Sequencing produced the corresponding read pairs WTC1_.fq.gz and WTC1_2.fq.gz. Fastqc was conducted on the sequence reads and it was determined the 
-sequences had poor per-base sequence quality, per-base sequence content, and poor sequence duplication levels. 
-#### Read Cleaning
-Trimmomatic was run with headcrop, trailing, slidingwindow:4:15, and minlen:75 parameters to clean the identified sequence errors. Post-cleaning resulted in 0.959% sequence
-retention with improved per-base sequence quality and per-base sequence content while the sequence duplication remained poor quality. [Read clean spreadsheet link](https://docs.google.com/spreadsheets/d/1AOa-XaTzR_PKMIRQDmu8oDTmawXXnkIwEjKOQkNC7Vs/edit?gid=0#gid=0)
+before being sequenced. Sequencing produced the corresponding read pairs WTC1_1.fq and WTC1_2.fq [Sequence Data/Precleaned Sequences](link). Fastqc was conducted on a compute node sequence and determined the sequences had poor per-base sequence quality, per-base sequence content, and poor sequence duplication levels. 
+### Read Cleaning
+Trimmomatic was run using the Trimmomatic.SBATCH script [Scripts](link)with headcrop, trailing, slidingwindow:4:15, and minlen:75 parameters to clean the identified sequence errors. Post-cleaning resulted in 0.959% sequence retention with improved per-base sequence quality and per-base sequence content while the sequence duplication remained poor quality ([Read clean spreadsheet link](https://docs.google.com/spreadsheets/d/1AOa-XaTzR_PKMIRQDmu8oDTmawXXnkIwEjKOQkNC7Vs/edit?gid=0#gid=0)). Single-end data was removed from the data pool while paired-end data was selected as the projects primary sequence. 
 | File Name | # Preclean Reads | # Postclean Reads | Retention % | Postclean per-base sequence quality | Preclean per-base sequence content | Postclean per-base sequence content | Preclean sequence duplication | Postclean sequence duplication | Postclean adapter contamination |
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | WTC1_1.fq.gz | 20752795 | 19901616 | 0.95898485 | G | B | G | B | B | None |
 | WTC1_2.fq.gz | 20752795 | 19901616 | 0.95898485 | G | B | G | B | B | None |
-#### Cleaned Sequence Alignment
+### Cleaned Sequence Alignment
 Using Bowtie2/2.5.3, the cleaned sequences were set into four indexes and mapped to the _C albicans_ reference genome using the Bowtie2.SBATCH script in scripts. (GCF_000182965.3_ASM18296v3_genomic.fna available through NCBI).[Alignment summary spreadsheet](https://docs.google.com/spreadsheets/d/1fa-FXVMlCXOZkbHSx_mMg0OXLMy9BeBJg8uWrEMpKGo/edit?gid=0#gid=0)
 | Alignment File | # Cleaned reads after trimmomatic | # Read pairs detected by bowtie2 | % Aligned concordantly exactly 1 time | % Aligned concordantly >1 time | Overall alignment rate |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | WTC1.sam | 19901616 | 19901616 | 89.07% | 6.06% | 98.29% |
-#### Sequence Gene Counts
-description of Htseq-count
-#### Differential Expression Analysis
-description of deseq2
-#### Gene Ontology Integrative Analysis
-description
-####
+### Sequence Gene Counts
+Sequence alignment maps (.sam) to the _C. albicans_ gtf reference sequence [Sequence Data/Refrence Sequences.md](link) were created using Bowtie2. Index sequences were first created, which are present in [Indexes.md](add link) under the [Bowtie Sequence Alignment file](add link). After index creation, samtools was used on the compute node to convert the alignment map into a sorted (.srt) binary format (.bam) [Bowtie Sequence Alignment/Output Files.md](insert link). After alignment file sorting and format conversion, the maps were run through the htseq-count.SBATCH script [Scripts](link). 
+### Differential Expression Analysis
+Differential expression analysis was conducted using the deseq2 R script [Scripts/Deseq2](link). Deseq2 utilized the six htseq-count output files [Gene Counts /htseq-count inputs.md](link) to make a database of differential expression data that was filtered for the gene occurrence greater than 10 reads across all created samples/libraries in thiamine present and absent conditions. Deseq2 produced a PCA and volcano plots to measure gene expression variance in the presence and absence of thiamine.
+### Gene Ontology Integrative Analysis
+Uniprot searches were conducted to determine ontological information about the potential biological function of the derived sequences to produce the summary table. 
+###
 ## Results
-[__Table 1__](https://docs.google.com/spreadsheets/d/1Tri4uQrTrm4q5R-wuuJnm1LEDS5FAGOOAoEysvvmlHY/edit?gid=1290215029#gid=1290215029): table caption
+[__Table 1__](https://docs.google.com/spreadsheets/d/1Tri4uQrTrm4q5R-wuuJnm1LEDS5FAGOOAoEysvvmlHY/edit?gid=1290215029#gid=1290215029): __Summary table of significant differentially expressed genes.__ Description 
 | Locus tag | NCBI gene ID | gtf Gene name | Biological process (Uniprot) | Molecular function (Uniprot) | Cellular component (Uniprot) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 |CAALFM_C102590CA | 3636803 | SNZ1 | amino acid metabolism, pyridoxine biosynthesis, pyridoxal phosphate biosynthesis | amine lyase; pyridoxal 5'-phosphate synthase (glutamine hydrolyzing) | cytoplasm, fungal biofilm matrix|
@@ -46,10 +41,13 @@ description
 | CAALFM_CR09350CA | 3641901 | N/A | thiamine metabolism | Thiaminase-2/PQQC domain-containing protein | cytosol |
 | CAALFM_CR09360WA | 3641902 | FCY24 | transmembrane transport | transmembrane transporter | plasma membrane |
 
-![TH-vTH+_pcaplot](https://github.com/user-attachments/assets/8abe3bd9-8698-4a2f-8ad4-48469039c4da)
-__Figure 1__: table caption
+![TH-vTH+_pcaplot](https://github.com/user-attachments/assets/8abe3bd9-8698-4a2f-8ad4-48469039c4da)__Figure 1__: __PCA plot for significant differentially expressed genes.__ Both axes depict principle components that capture different levels of expression variance. The x-axis, PC1, accounts for the greatest amount of variance between gene expression while the y-axis, PC2, captures a second, more refined degree of variance. In this case, PC1 accounts for 88% of the overall variance while PC2 accounts for 9% of the variance. 
 
-![volcano_TH-vTH+](https://github.com/user-attachments/assets/bc94a540-d163-40fa-af34-ad16640d8a16)
-__Figure 2__: table caption
+![volcano_TH-vTH+]([R_volcano_plot_correct.pdf](https://github.com/user-attachments/files/18031535/R_volcano_plot_correct.pdf)__Figure 2__: __Volcano plot for significant differentially expressed genes.__ Log2 fold change is depicted on the x-axis to represent up-regulation for positively located clusters and down-regulation for negatively located clusters. Negative log10 of the P-value of 0.05 is represented on the y-axis to represent statistical significance. Three clusters are identified in both the thiamine present and thiamine absent groups.
 ## Analysis and Discussion
-type analysis and biological interpretation here
+### PCA Plot
+
+### Volcano Plot
+
+### Gene Ontology
+The composite sequence data yielded thirteen significant differentially up-regulated genes. 
