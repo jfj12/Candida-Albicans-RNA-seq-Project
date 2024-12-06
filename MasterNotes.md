@@ -43,7 +43,8 @@ Uniprot searches were conducted to determine ontological information about the p
 
 ![TH-vTH+_pcaplot](https://github.com/user-attachments/assets/8abe3bd9-8698-4a2f-8ad4-48469039c4da)__Figure 1__: __PCA plot for significant differentially expressed genes.__ Both axes depict principle components that capture different levels of expression variance. The x-axis, PC1, accounts for the greatest amount of variance between gene expression while the y-axis, PC2, captures a second, more refined degree of variance. In this case, PC1 accounts for 88% of the overall variance while PC2 accounts for 9% of the variance. 
 
-![R_volcano_plot_correct](https://github.com/user-attachments/assets/7f52949b-76cb-469f-80e8-3f094ada3e1a)__Figure 2__: __Volcano plot for significant differentially expressed genes.__ Log2 fold change is depicted on the x-axis to represent up-regulation for positively located clusters and down-regulation for negatively located clusters. Negative log10 of the P-value of 0.05 is represented on the y-axis to represent statistical significance. Three clusters are identified in both the thiamine present and thiamine absent groups.
+![R_volcano_plot_correct](https://github.com/user-attachments/assets/7f52949b-76cb-469f-80e8-3f094ada3e1a)
+__Figure 2__: __Volcano plot for significant differentially expressed genes.__ Log2 fold change is depicted on the x-axis to represent up-regulation for positively located clusters and down-regulation for negatively located clusters. Negative log10 of the P-value of 0.05 is represented on the y-axis to represent statistical significance. Three clusters are identified in both the thiamine present and thiamine absent groups.
 ## Analysis and Discussion
 ### PCA Plot
 
