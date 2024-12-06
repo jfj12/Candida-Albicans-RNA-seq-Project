@@ -48,8 +48,10 @@ Uniprot searches were conducted to determine ontological information about the p
 __Figure 2__: __Volcano plot for significant differentially expressed genes.__ Log2 fold change is depicted on the x-axis to represent up-regulation for positively located clusters and down-regulation for negatively located clusters. Negative log10 of the P-value of 0.05 is represented on the y-axis to represent statistical significance. Three clusters are identified in both the thiamine present and thiamine absent groups.
 ## Analysis and Discussion
 ### PCA Plot
-
+Six distinct clusters are identified, three corresponding to both the thiamine present and thiamine absent groups. 
 ### Volcano Plot
-
+Record observations
 ### Gene Ontology
-The composite sequence data yielded thirteen significant differentially up-regulated genes. 
+The composite sequence data yielded thirteen significant differentially up-regulated genes. biological significance
+## Conclusion
+Main conclusions about gene expression under the different conditions. 
