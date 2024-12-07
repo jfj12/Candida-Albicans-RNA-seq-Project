@@ -48,10 +48,10 @@ Uniprot searches were conducted to determine ontological information about the p
 __Figure 2__: __Volcano plot for significant differentially expressed genes.__ Log2 fold change is depicted on the x-axis to represent up-regulation for positively located clusters and down-regulation for negatively located clusters. Negative log10 of the P-value of 0.05 is represented on the y-axis to represent statistical significance. Three clusters are identified in both the thiamine present and thiamine absent groups.
 ## Analysis and Discussion
 ### PCA Plot
-Six distinct clusters are identified, three corresponding to both the thiamine present and thiamine absent groups. These clusters indicate six primary genetic mechanisms involved with thiamine metabolism.   
+Six distinct clusters are identified, three corresponding to both the thiamine present and thiamine absent groups, indicating six primary genetic mechanisms involved with thiamine metabolism.   
 ### Volcano Plot
 Thirteen genes experienced increased expression in response to thiamine starvation. 
 ### Gene Ontology
 In tandem with the principal component and volcano analysis, composite sequence data yielded thirteen significant differentially up-regulated genes. Five of the identified genes are related to thiamine biosynthesis and transferase activity while four were identified as transporters. The remaining genes had other functions not directly associated with thiamine metabolism such as amino acid and lipid metabolism and cell cycle maintenance. The primary location of these biological functions is found in the cytoplasm or cytosol.  
 ## Conclusion
-Main conclusions about gene expression under the different conditions. 
+Of the identified up-regulated genes, thiamine biosynthesis is the primary molecular mechanism, suggesting increased thiamine biosynthesis under starvation conditions. 
