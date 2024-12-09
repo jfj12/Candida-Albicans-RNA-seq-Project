@@ -47,6 +47,7 @@ Uniprot searches were conducted to determine ontological information about the p
 
 __Figure 2__: __Volcano plot for significant differentially expressed genes.__ Log2 fold change is depicted on the x-axis to represent up-regulation for positively located clusters and down-regulation for negatively located clusters. Negative log10 of the P-value of 0.05 is represented on the y-axis to represent statistical significance. Three clusters are identified in both the thiamine present and thiamine absent groups.
 
+[__Table 2__] __Gene Ontology Enrichment.__ The 13 differentially expressed genes were input into PANTHER19.0's gene ontology collection for biological processes against the _C. albicans_ genome. Using a false discovery rate for Fisher's Exact Test, P<0.05. 
 <img width="481" alt="Gene Ontology Enrichment" src="https://github.com/user-attachments/assets/1c3ef906-3736-439a-a4b7-c11692de2657">
 
 ## Analysis and Discussion
