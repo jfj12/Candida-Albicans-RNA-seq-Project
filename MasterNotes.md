@@ -46,6 +46,9 @@ Uniprot searches were conducted to determine ontological information about the p
 ![R_volcano_plot_correct](https://github.com/user-attachments/assets/7f52949b-76cb-469f-80e8-3f094ada3e1a)
 
 __Figure 2__: __Volcano plot for significant differentially expressed genes.__ Log2 fold change is depicted on the x-axis to represent up-regulation for positively located clusters and down-regulation for negatively located clusters. Negative log10 of the P-value of 0.05 is represented on the y-axis to represent statistical significance. Three clusters are identified in both the thiamine present and thiamine absent groups.
+
+<img width="481" alt="Gene Ontology Enrichment" src="https://github.com/user-attachments/assets/1c3ef906-3736-439a-a4b7-c11692de2657">
+
 ## Analysis and Discussion
 ### PCA Plot
 Six distinct clusters are identified, three corresponding to both the thiamine present and thiamine absent groups, indicating six primary genetic mechanisms involved with thiamine metabolism.   
@@ -53,5 +56,6 @@ Six distinct clusters are identified, three corresponding to both the thiamine p
 Thirteen genes experienced increased expression in response to thiamine starvation. 
 ### Gene Ontology
 In tandem with the principal component and volcano analysis, composite sequence data yielded thirteen significant differentially up-regulated genes. Five of the identified genes are related to thiamine biosynthesis and transferase activity while four were identified as transporters. The remaining genes had other functions not directly associated with thiamine metabolism such as amino acid and lipid metabolism and cell cycle maintenance. The primary location of these biological functions is found in the cytoplasm or cytosol.  
+### Enrichment Analysis
 ## Conclusion
 Of the identified up-regulated genes, thiamine biosynthesis is the primary molecular mechanism, suggesting increased thiamine biosynthesis under starvation conditions. These sequencing data support the hypothesis that virulence increases under thiamine starvation conditions. However, these strictly genetic data do not present a clear genetic association between hyphae formation and thiamine metabolism. Phenotypic observation would be required to confirm the presence or absence of hyphae under the control and experimental conditions. Despite the lack of information, current literature has proven thiamine metabolism to be essential to hyphae formation [[3](https://pmc.ncbi.nlm.nih.gov/articles/PMC7574024/#:~:text=Transcriptomic%2C%20genetic%2C%20molecular%20mass%2C,environmental%20niche%20and%20nutrient%2C%20respectively.)].
